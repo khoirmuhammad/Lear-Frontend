@@ -64,3 +64,56 @@ console.log(reduceRightArrays1);
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------
 
+//#region 5 Array.fill()
+// Definition : This method will specify the new value for each array element
+// parameter (value(required), start index (optional, but 0 is default), end index (optional, default value is array length))
+
+let arrays5 = ['Apple','Grapes','Banana','Orange','Avocado'];
+let fillRightArrays = arrays5.fill('Pinaple')
+console.log(fillRightArrays);
+// Result : [ 'Pinaple', 'Pinaple', 'Pinaple', 'Pinaple', 'Pinaple' ]
+
+let arrays51 = ['Apple','Grapes','Banana','Orange','Avocado'];
+let fillRightArrays1 = arrays51.fill('Pinaple',3,arrays51.length)
+console.log(fillRightArrays1);
+// result : [ 'Apple', 'Grapes', 'Banana', 'Pinaple', 'Pinaple' ] 
+
+//#endregion
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------
+
+//#region 6 Array.find()
+// Definition : Returns the value of the first element in the array that satisfies the provided testing function. Otherwise undefined is returned.
+
+let arrays6 = ['Apple','Grapes','Banana','Orange','Avocado'];
+let findArrays = arrays6.find(item => {
+    return item.charAt(0) == 'A';
+})
+console.log(findArrays);
+// Result : Apple (although within array has 2 element that beginning with 'A', since Apple is the first element is found, then only select apple)
+
+//#endregion
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------
+
+//#region 7 Array.indexOf()
+// Definition :Return the index of element, if no match value on element it will return -1, otherwise will return appropriate index
+
+let arrays7 = ['Apple','Grapes','Banana','Orange','Avocado'];
+let indexOfArrays = arrays7.indexOf('Banana')
+console.log(indexOfArrays);
+// Result : 2
+
+//#endregion
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------
+
+//#region Array.lastIndexOf()
+// Definition : Return the last index (position) of a specified value: If no match element it will return -1
+
+let arrays8 = ['Apple','Grapes','Banana','Orange','Banana','Avocado'];
+let lastIndexOfArrays = arrays8.lastIndexOf('Banana')
+console.log(lastIndexOfArrays);
+// Result : 4
+
+//#endregion
