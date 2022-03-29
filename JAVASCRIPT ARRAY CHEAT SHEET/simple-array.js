@@ -9,6 +9,8 @@ console.log(mapArrays);
 // Result : ['Apple Fruit', 'Grapes Fruit', 'Banana Fruit', 'Orange Fruit']
 //#endregion
 
+//--------------------------------------------------------------------------------------------------------------------------------------------------
+
 //#region 2 Array.filter()
 // Definition : This method will return a new array that pass / match with particular condition. For example here I need to select all element has leter A at the begining
 
@@ -19,6 +21,8 @@ let filterArrays = arrays2.filter(item => {
 console.log(filterArrays);
 // Result : ['Apple', 'Avocado']
 //#endregion
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------
 
 //#region 3 Array.reduce()
 // Definition : Reduce all element array into single result. The single value is obtained from accumulation of elements.
@@ -38,6 +42,8 @@ console.log(reduceArrays1);
 // Result : 10 (it will substruct the the left value (100) with the next value) 100 - 20 - 30 - 40;
 //#endregion
 
+//--------------------------------------------------------------------------------------------------------------------------------------------------
+
 //#region 4 Array.reduceRight()
 // Definition : Reduce all element array into single result. The single value is obtained from accumulation of elements from right element to left
 
@@ -54,3 +60,7 @@ let reduceRightArrays1 = arrays41.reduceRight((total,item) => {
 })
 console.log(reduceRightArrays1);
 // Result : -110 (will substract from right element to left)
+//#endregion
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------
+
